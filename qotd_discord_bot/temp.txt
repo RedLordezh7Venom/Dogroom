@@ -1,0 +1,6 @@
+2-Sum Problem 
+Longest Common Subsequence Problem 
+Maximum Subarray Prob 
+Subset Sum Problem  
+Longest Palindromic Subsequence Problem 
+ 

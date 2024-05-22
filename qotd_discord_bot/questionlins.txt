@@ -1,0 +1,7 @@
+link 2-Sum Problem 
+lnkLongest Common Subsequence Problem 
+linkMaimum Subarray Prob 
+link0–1 Knapsack Problem 
+linkSubset Sum Problem  
+linkLongest Palindromic Subsequence Problem 
+ 

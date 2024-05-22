@@ -1,0 +1,7 @@
+2-Sum Problem 
+Longest Common Subsequence Problem 
+Maximum Subarray Prob 
+0–1 Knapsack Problem 
+Subset Sum Problem  
+Longest Palindromic Subsequence Problem 
+ adsfasd
