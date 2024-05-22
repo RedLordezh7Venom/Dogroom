@@ -17,8 +17,8 @@ import time
 
 
 load_dotenv()
-TOKEN = ''
-GOOGLE_AI_KEY = ''
+TOKEN = os.environ.get('TOKEN')
+GOOGLE_AI_KEY = os.envirion.get('GOOGLE_AI_KEY')
 MAX_HISTORY  = 10
 message_history = {}
 
