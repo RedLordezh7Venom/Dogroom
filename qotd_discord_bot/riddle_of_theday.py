@@ -17,8 +17,8 @@ import time
 
 
 load_dotenv()
-TOKEN = 'MTIzNzAzOTg1NzIwMTU3Nzk5NA.Ge_RGX.JrArbtSQORh2t8HVNrXEKUWBS3zNloi6Vm08z4'
-GOOGLE_AI_KEY = 'AIzaSyCys_G-oWuWtM-ja7WvMLNX2gSLgtmwYiI'
+TOKEN = ''
+GOOGLE_AI_KEY = ''
 MAX_HISTORY  = 10
 message_history = {}
 
