@@ -5,12 +5,12 @@ from disnake.ext import tasks
 import asyncio
 from disnake.ext import commands
 from dotenv import load_dotenv
-from datetime import datetime
+from datetime import datetime,timedelta
 from pathlib import Path
 import aiohttp
 import time
 import riddle_of_theday
-import links
+import links 
 
 
 load_dotenv()
@@ -373,5 +373,30 @@ async def say(inter, channel_id, message):
     )
     await inter.send(embed=embed)
 
-
+@Bot.slash_command(name="summarise", description="Summarise chat upto a week")
+# @commands.has_permissions(kick_members=True)
+async def summarise(inter, channel_id):
+    await inter.response.defer()  # Defer the interaction first
+    
+    channel = Bot.get_channel(int(channel_id))
+    
+    # Calculate the start and end dates for the week
+    end_date = datetime.now()  # Current local date and time
+    start_date = end_date - timedelta(days=25)  # 7 days ago
+    
+    # Fetch messages within the week
+    messages = await channel.history(limit=None, after=start_date, before=end_date).flatten()
+    
+    summary = ""
+    for message in messages:
+        if not message.author.bot:
+            summary += f"{message.clean_content}\n"
+    
+    await riddle_of_theday.summarise(channel,summary)
+    embed = disnake.Embed(
+        title = f"Success!",
+        description = f"Summarised text for the time period {start_date} to {end_date}",
+        colour = embedcolor,
+    )
+    await inter.send(embed = embed)
 Bot.run(TOKEN)
