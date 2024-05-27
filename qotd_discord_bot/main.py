@@ -375,14 +375,14 @@ async def say(inter, channel_id, message):
 
 @Bot.slash_command(name="summarise", description="Summarise chat upto a week")
 # @commands.has_permissions(kick_members=True)
-async def summarise(inter, channel_id):
+async def summarise(inter):
     await inter.response.defer()  # Defer the interaction first
     
-    channel = Bot.get_channel(int(channel_id))
+    channel = inter.channel
     
     # Calculate the start and end dates for the week
     end_date = datetime.now()  # Current local date and time
-    start_date = end_date - timedelta(days=25)  # 7 days ago
+    start_date = end_date - timedelta(days=7)  # 7 days ago
     
     # Fetch messages within the week
     messages = await channel.history(limit=None, after=start_date, before=end_date).flatten()
