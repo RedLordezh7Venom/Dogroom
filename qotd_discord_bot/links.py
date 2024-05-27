@@ -58,7 +58,6 @@ global_options = [
         )
     ]
 
-# Define your bot with the appropriate intents
 
 # Bot ready event to fetch bot details
 @Bot.event

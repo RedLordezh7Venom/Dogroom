@@ -18,7 +18,7 @@ import time
 
 load_dotenv()
 TOKEN = os.environ.get('TOKEN')
-GOOGLE_AI_KEY = os.envirion.get('GOOGLE_AI_KEY')
+GOOGLE_AI_KEY = os.environ.get('GOOGLE_AI_KEY')
 MAX_HISTORY  = 10
 message_history = {}
 
@@ -99,6 +99,15 @@ progress = 0
 async def question_post(channel):
       # Ignore messages sent by the bot
     cleaned_text = "send a daily riddle on either of the following topics  : DSA, AI , Machine learning, web development, coding , cyber security, programming history, robotics do not give answer only question the title should be \"Daily riddle\":"
+
+
+    response_text = await generate_response_with_text(cleaned_text)
+    #add AI response to history
+    await split_and_send_messages(channel, response_text, 1700)
+    return
+async def summarise(channel,message):
+      # Ignore messages sent by the bot
+    cleaned_text = "Summarise the following chat in about 500 words and give details on who said what and respond with \"Chat Summary : \"+ (your response)  :" + message
 
 
     response_text = await generate_response_with_text(cleaned_text)
