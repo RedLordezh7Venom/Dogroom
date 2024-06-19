@@ -1,8 +1,4 @@
-Sure, I'll adapt the provided README template for the "Dogroom" project hosted at https://github.com/RedLordezh7Venom/Dogroom.
-
----
-
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+ <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -35,7 +31,7 @@ Sure, I'll adapt the provided README template for the "Dogroom" project hosted a
 <br />
 <div align="center">
   <a href="https://github.com/RedLordezh7Venom/Dogroom">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://ugc.production.linktr.ee/2a6c8d7a-a38a-45c4-9e9f-4a14b6c88714_GR-Logo.png?io=true&size=avatar-v3_0" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Dogroom Discord Bot</h3>
