@@ -1,6 +1,3 @@
-Here's a tailored README template for the Jon Scraper and DogRoom Discord Bot projects. Each section has been customized to fit these projects, including their specific functionalities like Daily DSA, chat summarizer, and multiple tools for DogRoom Discord Bot.
-
-```markdown
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -37,10 +34,10 @@ Here's a tailored README template for the Jon Scraper and DogRoom Discord Bot pr
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Jon Scraper & DogRoom Discord Bot</h3>
+<h3 align="center">project_title</h3>
 
   <p align="center">
-    This repository contains the Jon Scraper and DogRoom Discord Bot projects, designed to enhance productivity and community interaction.
+    project_description
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -62,8 +59,7 @@ Here's a tailored README template for the Jon Scraper and DogRoom Discord Bot pr
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#jon-scraper">Jon Scraper</a></li>
-        <li><a href="#dogroom-discord-bot">DogRoom Discord Bot</a></li>
+        <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
@@ -89,13 +85,7 @@ Here's a tailored README template for the Jon Scraper and DogRoom Discord Bot pr
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This repository includes two distinct yet complementary projects:
-
-### Jon Scraper
-A web scraping tool designed to extract and analyze data from various sources, providing valuable insights and automations.
-
-### DogRoom Discord Bot
-A versatile Discord bot with features like Daily DSA (Daily Data Structure and Algorithm problems), chat summarizer, and multiple productivity tools to enhance the Discord experience.
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,11 +93,14 @@ A versatile Discord bot with features like Daily DSA (Daily Data Structure and A
 
 ### Built With
 
-* [![Python][Python.org]][Python-url]
-* [![Node.js][Node.js]][Node-url]
-* [![Discord.js][Discord.js]][Discord-url]
-* [![Beautiful Soup][BeautifulSoup]][BeautifulSoup-url]
-* [![Requests][Requests]][Requests-url]
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![Vue][Vue.js]][Vue-url]
+* [![Angular][Angular.io]][Angular-url]
+* [![Svelte][Svelte.dev]][Svelte-url]
+* [![Laravel][Laravel.com]][Laravel-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,12 +109,12 @@ A versatile Discord bot with features like Daily DSA (Daily Data Structure and A
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Follow these instructions to set up the projects locally.
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* Python 3.x
-* Node.js
+This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
   npm install npm@latest -g
@@ -129,38 +122,18 @@ Follow these instructions to set up the projects locally.
 
 ### Installation
 
-#### Jon Scraper
-
-1. Clone the repo
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
    ```sh
    git clone https://github.com/github_username/repo_name.git
-   ```
-2. Navigate to the Jon Scraper directory
-   ```sh
-   cd jon-scraper
-   ```
-3. Install Python packages
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-#### DogRoom Discord Bot
-
-1. Clone the repo (if not already done)
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-2. Navigate to the DogRoom Discord Bot directory
-   ```sh
-   cd dogroom-discord-bot
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your Discord bot token in `config.js`
+4. Enter your API in `config.js`
    ```js
-   const DISCORD_TOKEN = 'YOUR_DISCORD_BOT_TOKEN';
+   const API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -170,21 +143,9 @@ Follow these instructions to set up the projects locally.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### Jon Scraper
-1. Run the scraper
-   ```sh
-   python scraper.py
-   ```
-2. View the generated reports and data in the output directory.
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-### DogRoom Discord Bot
-1. Start the bot
-   ```sh
-   node bot.js
-   ```
-2. Use the bot commands within your Discord server to access features like Daily DSA, chat summarizer, and more.
-
-_For more examples and detailed documentation, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,13 +154,10 @@ _For more examples and detailed documentation, please refer to the [Documentatio
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Jon Scraper Enhancements
-    - [ ] Add support for more websites
-    - [ ] Improve data processing algorithms
-- [ ] DogRoom Discord Bot Features
-    - [ ] Daily DSA improvements
-    - [ ] Enhanced chat summarizer
-    - [ ] Additional productivity tools
+- [ ] Feature 1
+- [ ] Feature 2
+- [ ] Feature 3
+    - [ ] Nested Feature
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
@@ -248,10 +206,9 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [OpenAI](https://www.openai.com)
-* [Discord.js](https://discord.js.org)
-* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
-* [Requests](https://requests.readthedocs.io/en/master/)
+* []()
+* []()
+* []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -262,4 +219,35 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username
+[forks-url]: https://github.com/github_username/repo_name/network/members
+[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-url]: https://github.com/github_username/repo_name/stargazers
+[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-url]: https://github.com/github_username/repo_name/issues
+[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/linkedin_username
+[product-screenshot]: images/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[Svelte-url]: https://svelte.dev/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.c m
+Use this readme template for 
+ Jon scraper 
+And dogroom discord bot 
+The parts of discord bot are 
+Daily DSA ,  chat summariser  and multiple tools 
+ 
