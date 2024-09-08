@@ -29,7 +29,7 @@ target = 1236401558028292137#1116378200096907264#fill in
 pingrole = "1116378165284196484"
 
 #Hour QOTD is to be posted
-posttime = 20#fill in
+posttime = 12#fill in
 
 embedcolor = disnake.Colour.green()
 
@@ -78,6 +78,7 @@ async def question_post(channel):
     # Extract question description and remove problematic Unicode characters
     description = random_question.find("div").text.strip()
     description_cleaned = description.replace('\u230a', '')  # Replace problematic Unicode character
+    description_cleaned = await riddle_of_theday.generate_response_with_text("Prettify the following description to be sent in a discord embed : " + description_cleaned)
 
     # Construct the problem link
     title_with_hyphens = re.sub(r'[^\w\s-]', '', title).strip().replace(' ', '-').lower()
@@ -90,7 +91,7 @@ async def question_post(channel):
         description=description_cleaned,
         colour=embedcolor
     )
-    embed.add_field(name="Problem Link", value=link_without_number)
+    embed.add_field(name="Problem Link", value=f"[Click here](https://example.com)")
     embed.set_author(name="Today's problem:", icon_url='https://images.playground.com/85f17db5dc3a4b38acc26419711b6c4d.jpeg')
     embed.set_footer(text=f"Daily Question #{datetime.now().date()}")
 
@@ -375,14 +376,14 @@ async def say(inter, channel_id, message):
 
 @Bot.slash_command(name="summarise", description="Summarise chat upto a week")
 # @commands.has_permissions(kick_members=True)
-async def summarise(inter):
+async def summarise(inter, channel_id):
     await inter.response.defer()  # Defer the interaction first
     
-    channel = inter.channel
+    channel = Bot.get_channel(int(channel_id))
     
     # Calculate the start and end dates for the week
     end_date = datetime.now()  # Current local date and time
-    start_date = end_date - timedelta(days=7)  # 7 days ago
+    start_date = end_date - timedelta(days=25)  # 7 days ago
     
     # Fetch messages within the week
     messages = await channel.history(limit=None, after=start_date, before=end_date).flatten()

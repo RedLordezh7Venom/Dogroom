@@ -1,16 +1,12 @@
 # QOTD Discord Bot
-Question of the Day Discord Bot. 
-Based on Gemini Prompt model
-### Daily DSA Posts:
-* DSA questions from leetcode on a daily basis
-### Riddles, Qna : 
-* Riddles, and topic wise questions using Gemini API
+Question of the Day Discord Bot. Free to use, but credit would be nice. Simply fill in the variables with your channel ID and desired posting hour, and then run. 
+A sample questions file is included.
+
+Don't sell this. It's not for profit.
+
 
 Commands:
 
 /add [question]
 /test
-/riddle
-/qotd
 /say
-/links
